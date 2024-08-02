@@ -1,0 +1,40 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "RobuxGenerator", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "Tutorial",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddParagraph("Tutorial","To get robuxs, you need to create a pass for 5 robuxi and click on the button then the bot will send robuxi to the pass that you made and most importantly, it can be used once a day. If you click again, you will not receive it until tomorrow.")
+
+local Tab = Window:MakeTab({
+	Name = "Free",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Get 5 robux (commission)",
+	Callback = function()
+      	game.Players.LocalPlayer:Kick("Thanks a day later, look at the transactions if you haven't seen the tutorial, look now")
+	
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "STATUS",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddParagraph("STATUS","ACTIVE")
+
+OrionLib:MakeNotification({
+	Name = "Hello",
+	Content = "Please read tutorial",
+	Image = "rbxassetid://4483345998",
+	Time = 10
+})
